@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cat <<EOF
+
+Palettes instaled in "/etc/paleta/palettes"
+st 0.8.3 patch installed in "/etc/paleta/misc/st-osc_10_11_12-20200418-66520e1.patch"
+
+EOF

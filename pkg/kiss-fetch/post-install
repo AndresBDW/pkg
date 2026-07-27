@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cat << EOF
+This script integrates into the package manager
+use it with:
+kiss-fetch, kiss f, or kiss fetch
+EOF
+

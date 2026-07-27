@@ -1,0 +1,49 @@
+pkg
+_______________________________________________
+
+este es mi repositorio de paquetes que uso para
+kiss linux, es un repositorio extra el cual
+no se debe usar como repositorio principal ya
+que no tiene las utilidades principales como
+busybox, git, gcc, curl, make, musl, etc.
+
+instalacion
+_______________________________________________
+
+solo añade el repo a tu $KISS_PATH:
+
+ +-------------------------------------------+
+ |                                           |
+ |  $ export KISS_PATH="$KISS_PATH:/ruta/a/  |
+ |    pkg/pkg"                               |
+ |                                           |
+ +-------------------------------------------+
+
+y listo.
+
+paquetes
+_______________________________________________
+
+este repositorio tiene de momento, pocos paque
+tes. aqui hay una lista de cada uno:
+
+ - fastfetch
+ - okpal-git
+ - wf-recorder
+ - paleta
+ - shlolcat-git
+ - kiss-fetch
+ - cmatrix-git
+ - tty-clock 
+ - cowsay 
+ - hfetch
+ - swayimg
+ - pywal16
+ - birch-patched
+
+luego se iran poniendo mas.
+los paquetes que terminan con -git es por que
+no tienen version fija, son clones de los 
+repositorios de los paquetes, es decir, que
+es como si tu clonases el repo y lo compilas
+y lo instalas tu mismo.

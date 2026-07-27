@@ -1,0 +1,10 @@
+fontconfig
+freetype-harfbuzz
+libdrm
+libjpeg-turbo
+libpng
+libwebp
+libxkbcommon
+luajit
+meson	make
+wayland

@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+make
+DESTDIR="$1" make install
+
+mkdir -p "$1/etc/paleta/misc" "$1/etc/paleta/palettes"
+
+cp ./palettes/* "$1/etc/paleta/palettes"
+cp ./misc/st-osc_10_11_12-20200418-66520e1.patch "$1/etc/paleta/misc"

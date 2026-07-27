@@ -1,0 +1,3 @@
+#!/bin/sh -e
+
+install -D hfetch "$1/usr/bin/hfetch" 

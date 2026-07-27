@@ -1,0 +1,8 @@
+ffmpeg
+libdrm
+libxkbcommon
+mesa
+meson    make
+wayland
+wayland-protocols
+wlroots
