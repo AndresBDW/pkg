@@ -44,6 +44,7 @@ tes. aqui hay una lista de cada uno:
  - vulkan-tools
  - glslang
  - volk-git
+ - stow
 
 luego se iran poniendo mas.
 los paquetes que terminan con -git es por que
