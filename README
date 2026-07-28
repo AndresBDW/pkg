@@ -40,6 +40,11 @@ tes. aqui hay una lista de cada uno:
  - swayimg
  - pywal16
  - birch-patched
+ - vulkan-loader
+ - vulkan-headers
+ - vulkan-tools
+ - glslang
+ - volk-git
 
 luego se iran poniendo mas.
 los paquetes que terminan con -git es por que

@@ -1,3 +1,5 @@
 #!/bin/sh
 
+pwd
+ls -lha
 install -D gfetch "$1/usr/bin/gfetch"
