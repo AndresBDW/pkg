@@ -1,0 +1,21 @@
+#!/bin/sh -e
+
+cargo fetch
+cargo install cargo-c
+
+export PATH="$PATH:$HOME/.cargo/bin"
+
+meson setup \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --mandir=/usr/share/man \
+    --localstatedir=/var \
+    -Dbuildtype=release \
+    -Dintrospection=disabled \
+    -Dvala=disabled \
+    -Ddocs=disabled \
+    . build
+
+meson compile -C build
+
+DESTDIR="$1" meson install -C build

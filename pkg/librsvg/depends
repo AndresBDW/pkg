@@ -1,0 +1,11 @@
+rust
+cairo
+fontconfig
+freetype-harfbuzz
+gdk-pixbuf
+glib
+pango
+libxml2
+gdk-pixbuf
+pango
+rust

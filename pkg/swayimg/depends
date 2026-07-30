@@ -1,8 +1,11 @@
+cairo
 fontconfig
 freetype-harfbuzz
+glib
 libdrm
 libjpeg-turbo
 libpng
+librsvg
 libwebp
 libxkbcommon
 luajit
