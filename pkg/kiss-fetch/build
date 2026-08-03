@@ -1,3 +1,0 @@
-#!/bin/sh -e
-
-install -D kiss-fetch "$1/usr/bin/kiss-fetch"
