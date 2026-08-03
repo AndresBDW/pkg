@@ -1,0 +1,6 @@
+curl
+glib
+libstrophe
+ncurses
+readline
+sqlite

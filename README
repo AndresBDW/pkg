@@ -44,6 +44,8 @@ tes. aqui hay una lista de cada uno:
  - glslang
  - volk-git
  - librsvg
+ - libstrophe
+ - profanity
 
 luego se iran poniendo mas.
 los paquetes que terminan con -git es por que
