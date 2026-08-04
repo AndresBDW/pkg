@@ -48,3 +48,20 @@ no tienen version fija, son clones de los
 repositorios de los paquetes, es decir, que
 es como si tu clonases el repo y lo compilas
 y lo instalas tu mismo.
+
+hooks
+________________________________________________
+
+esto son hooks extra para el gestor de
+paquetes, de momento solo hay:
+
+ - kiss-buildtime-hook
+
+pa añadirlos es poner:
+
+ +-----------------------------------------+
+ |                                         |
+ |  $ export KISS_HOOK="/ruta/a/el/hook:   |
+ |    ruta/a/el/hook2:/ruta/a/el/hook3"    |
+ |                                         |
+ +-----------------------------------------+
