@@ -1,8 +1,0 @@
-#!/bin/sh -e
-
-CFLAGS="$CFLAGS -Wno-incompatible-pointer-types -Wno-cast-function-type -Wno-compare-distinct-pointer-types"
-
-./configure --prefix=/usr --disable-static
-
-make
-DESTDIR="$1" make install

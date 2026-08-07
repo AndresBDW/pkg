@@ -1,0 +1,68 @@
+#!/bin/sh
+
+# License: MIT
+# Original author: Andresqwq
+
+pkg=$2
+date=$(date +%Y-%m-%d)
+logdir="${XDG_CACHE_DIR:-$HOME/.cache}/kiss/logs/$date"
+TIME_FILE="${TMPDIR:-/tmp}/kiss-timer-$pkg"
+
+get_uptime() {
+    IFS=. read -r _uptime _ < /proc/uptime
+    echo "$_uptime"
+}
+
+print_time() {
+    local step="$1"
+    local start_time="$2"
+    local end_time
+    end_time=$(get_uptime)
+    
+    _s=$((end_time - start_time))
+    _h=$((_s / 60 / 60 % 24))
+    _m=$((_s / 60 % 60 ))
+    _u=""
+
+    [ "$_h" = 0 ] || _u="${_u}${_h}h "
+    [ "$_m" = 0 ] || _u="${_u}${_m}m "
+    
+    msg="$step finished in ~${_u:-${_s}s}"
+
+    printf '\033[1;33m-> \033[1;34m%s \033[m%s\n' "$pkg" "$msg" >&2
+
+    mkdir -p "$logdir"
+    printf "%s -> %s\n" "$step" "${_u:-${_s}s}" >> "$logdir/kiss-timer-$pkg.txt"
+}
+
+case "$1" in
+    pre-extract)
+        get_uptime > "${TIME_FILE}_extract"
+        ;;
+    pre-build)
+        if [ -f "${TIME_FILE}_extract" ]; then
+            read -r start < "${TIME_FILE}_extract"
+            print_time "Extraction" "$start"
+            rm -f "${TIME_FILE}_extract"
+        fi
+        get_uptime > "${TIME_FILE}_build"
+        ;;
+    post-build)
+        if [ -f "${TIME_FILE}_build" ]; then
+            read -r start < "${TIME_FILE}_build"
+            print_time "Build" "$start"
+            rm -f "${TIME_FILE}_build"
+        fi
+        ;;
+    pre-install)
+        get_uptime > "${TIME_FILE}_install"
+        ;;
+    post-install)
+        if [ -f "${TIME_FILE}_install" ]; then
+            read -r start < "${TIME_FILE}_install"
+            print_time "Installation" "$start"
+            rm -f "${TIME_FILE}_install"
+        fi
+        rm -f "${TIME_FILE}_extract" "${TIME_FILE}_build" "${TIME_FILE}_install"
+        ;;
+esac
