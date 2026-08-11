@@ -28,17 +28,14 @@ este repositorio tiene de momento, pocos paque
 tes. aqui hay una lista de cada uno:
 
  - fastfetch
- - okpal-git
+ - okpal
  - wf-recorder
  - gfetch
- - swayimg
- - pywal16
  - vulkan-loader
  - vulkan-headers
  - vulkan-tools
  - glslang
- - volk-git
- - librsvg
+ - volk
  - kiss-cacheman
  - kiss-rmdeps
  - drop
