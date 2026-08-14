@@ -30,7 +30,6 @@ tes. aqui hay una lista de cada uno:
  - fastfetch
  - okpal
  - wf-recorder
- - gfetch
  - vulkan-loader
  - vulkan-headers
  - vulkan-tools
@@ -38,8 +37,6 @@ tes. aqui hay una lista de cada uno:
  - volk
  - kiss-cacheman
  - kiss-rmdeps
- - drop
- - noteeventtest
 
 luego se iran poniendo mas.
 los paquetes que terminan con -git es por que
