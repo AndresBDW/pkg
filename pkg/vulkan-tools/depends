@@ -1,2 +1,4 @@
 cmake make
-volk-git
+volk  make
+wayland
+wayland-protocols
