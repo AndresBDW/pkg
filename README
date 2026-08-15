@@ -15,17 +15,19 @@ solo añade el repo a tu $KISS_PATH:
  +-------------------------------------------+
  |                                           |
  |  $ export KISS_PATH="$KISS_PATH:/ruta/a/  |
- |    pkg/pkg"                               |
+ |    pkg/main"                              |
+ |  # Si se va a instalar el repo "extra"    |
+ |  $ export KISS_PATH="$KISS_PATH:/ruta/a/  |
+ |    pkg/extra                              |
  |                                           |
  +-------------------------------------------+
 
-y listo.
-
-paquetes
+main
 _______________________________________________
 
-este repositorio tiene de momento, pocos paque
-tes. aqui hay una lista de cada uno:
+este repositorio es el repo principal, donde 
+estan todos los paquetes mantenidos. aqui hay 
+una lista de cada uno:
 
  - fastfetch
  - paleta
@@ -37,9 +39,13 @@ tes. aqui hay una lista de cada uno:
  - volk
  - kiss-cacheman
 
-luego se iran poniendo mas.
-los paquetes que terminan con -git es por que
-no tienen version fija, son clones de los 
-repositorios de los paquetes, es decir, que
-es como si tu clonases el repo y lo compilas
-y lo instalas tu mismo.
+extra
+_______________________________________________
+
+este repositorio son paquetes de prueba, que
+probablemente no sean mantenidos, si se desean
+mantener se van a mover al repositorio main,
+aqui esta la lista de paquetes:
+
+ - vfetch
+
