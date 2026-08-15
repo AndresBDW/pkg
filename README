@@ -28,7 +28,7 @@ este repositorio tiene de momento, pocos paque
 tes. aqui hay una lista de cada uno:
 
  - fastfetch
- - okpal
+ - paleta
  - wf-recorder
  - vulkan-loader
  - vulkan-headers
@@ -36,7 +36,6 @@ tes. aqui hay una lista de cada uno:
  - glslang
  - volk
  - kiss-cacheman
- - kiss-rmdeps
 
 luego se iran poniendo mas.
 los paquetes que terminan con -git es por que

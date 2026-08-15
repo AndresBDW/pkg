@@ -1,3 +1,0 @@
-#!/bin/sh -e
-
-install -D kiss-rmdeps "$1/usr/bin/kiss-rmdeps"
