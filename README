@@ -15,14 +15,14 @@ solo añade el repo a tu $KISS_PATH:
  +-------------------------------------------+
  |                                           |
  |  $ export KISS_PATH="$KISS_PATH:/ruta/a/  |
- |    pkg/main"                              |
+ |    pkg/pkg"                               |
  |  # Si se va a instalar el repo "extra"    |
  |  $ export KISS_PATH="$KISS_PATH:/ruta/a/  |
  |    pkg/testing                            |
  |                                           |
  +-------------------------------------------+
 
-main
+pkg
 _______________________________________________
 
 este repositorio es el repo principal, donde 
