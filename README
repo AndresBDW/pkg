@@ -18,7 +18,7 @@ solo añade el repo a tu $KISS_PATH:
  |    pkg/main"                              |
  |  # Si se va a instalar el repo "extra"    |
  |  $ export KISS_PATH="$KISS_PATH:/ruta/a/  |
- |    pkg/extra                              |
+ |    pkg/testing                            |
  |                                           |
  +-------------------------------------------+
 
@@ -39,13 +39,19 @@ una lista de cada uno:
  - volk
  - kiss-cacheman
 
-extra
+testing
 _______________________________________________
 
 este repositorio son paquetes de prueba, que
 probablemente no sean mantenidos, si se desean
 mantener se van a mover al repositorio main,
-aqui esta la lista de paquetes:
+no se recomienda usar estos paquetes como uso
+diario, si necesitas el paquete, armate un 
+repo, es mucho mejor que tener un paquete viejo
+(y hasta probablemente roto) aqui esta la lista 
+de paquetes:
 
  - vfetch
  - gfetch
+ - birch-patched
+ - shlolcat
