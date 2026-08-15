@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+patch -p1 < patches/kiss.diff
+
+make
+make install

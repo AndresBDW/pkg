@@ -1,8 +1,10 @@
 #!/bin/sh -e
 
+export DESTDIR="$1"
+
 mkdir -p build
 cd build
 
 cmake .. -DBUILD_FLASHFETCH=OFF
 cmake --build . --target fastfetch
-DESTDIR="$1" cmake --install .
+cmake --install .
