@@ -38,6 +38,7 @@ una lista de cada uno:
  - glslang
  - volk
  - kiss-cacheman
+ - drop
 
 testing
 _______________________________________________
@@ -53,7 +54,4 @@ de paquetes:
 
  - vfetch
  - gfetch
- - birch-patched
- - shlolcat
- - drop
  - noteeventtest
