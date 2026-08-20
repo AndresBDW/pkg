@@ -1,0 +1,3 @@
+#!/bin/sh -e
+
+install -D drop "$1/usr/bin/drop"
